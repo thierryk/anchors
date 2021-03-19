@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Test A</title>
+    <style>
+        body {
+            padding: 3em;
+        }
+    </style>
+</head>
+<body>
+  <h1>Tabindex</h1>
+  <p>The headings below are the target of the link anchors</p>
+  <h2 id="a">
+    <a href="#a" title="link to anchor">Section A</a>
+  </h2>
+  <p>Markup:</p>
+  <pre>
+    &lt;h2 id="a"&gt;
+      &lt;a href="#a" title="link to anchor">Section A&lt;/a&gt;
+    &lt;/h2&gt;
+  </pre>
+  <h2 id="b" tabindex="-1">
+    <a href="#b" title="link to anchor">Section B</a>
+  </h2>
+  <p>Markup:</p>
+  <pre>
+    &lt;h2 id="b" tabindex="-1"&gt;
+      &lt;a href="#b" title="link to anchor">Section B&lt;/a&gt;
+    &lt;/h2&gt;
+  </pre>
+  <h2 id="c" tabindex="0">
+    <a href="#c" title="link to anchor">Section C</a>
+  </h2>
+  <pre>
+    &lt;h2 id="c" tabindex="0"&gt;
+      &lt;a href="#c" title="link to anchor">Section C&lt;/a&gt;
+    &lt;/h2&gt;
+  </pre>
+</body>
+</html> 
