@@ -7,8 +7,19 @@
         body {
             padding: 3em;
         }
-        :target {background: teal;}
-
+        :target {
+            outline: none; /* ajout */
+            -webkit-animation: target-fade 3s 1;
+            -moz-animation: target-fade 3s 1;
+        }
+        @-webkit-keyframes target-fade {
+            0% { background-color: rgba(0,0,0,.5); }
+            100% { background-color: rgba(0,0,0,0); }
+        }
+        @-moz-keyframes target-fade {
+            0% { background-color: rgba(0,0,0,.5); }
+            100% { background-color: rgba(0,0,0,0); }
+        }
     </style>
 </head>
 <body>
